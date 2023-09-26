@@ -126,7 +126,8 @@ export class HomePage extends Component {
     const categoriesTodos = familyTodos.filter((todo) => todo.categories);
     const undoneTodos = familyTodos.filter((todo) => !todo.categories);
     return (
-      <Container style={{background: '#000'}}>
+     <div style={{background: '#000'}}>
+      <Container >
         <ToastContainer />
         <TodoForm
           validated={validated}
@@ -183,6 +184,7 @@ export class HomePage extends Component {
         </Tabs>
         <Footer />
       </Container>
+    </div>
     );
   }
 }
